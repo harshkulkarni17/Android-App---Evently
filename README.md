@@ -13,6 +13,7 @@ Evently is an android application that does the work of automatically rememberin
 <p align="left">
   <img src="https://user-images.githubusercontent.com/72391096/169689916-0b6fdd0f-2986-448d-8e12-160d84bab076.jpeg" width=230  height=400/> 
   <img src="https://user-images.githubusercontent.com/72391096/169689921-9886a37e-aacb-4783-8873-34d4fdef451c.jpeg" width=230  height=400/>
+  <br />
   <img src="https://user-images.githubusercontent.com/72391096/169689922-7feef609-6e4b-4078-a0f9-5a67a13af377.jpeg" width=230  height=400/> 
   <img src="https://user-images.githubusercontent.com/72391096/169689924-f1a55d06-c528-4533-959e-0aa89c836f13.jpeg" width=230  height=400/>
 </p>
