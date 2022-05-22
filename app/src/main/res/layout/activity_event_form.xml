@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F1A30"
+    tools:context=".event_form">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD EVENT"
+        android:fontFamily="@font/abril_fatface"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/btngray"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_baseline_sticky_note_2_24"
+            android:drawablePadding="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Name"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSdate"
+            android:layout_below="@+id/etName"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="10dp"
+            android:hint="Start Date"
+            android:onClick="getStartTime"
+            android:background="@drawable/custom_input"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEdate"
+            android:layout_below="@+id/etSdate"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="10dp"
+            android:hint="End Date"
+            android:onClick="getEndTime"
+            android:background="@drawable/custom_input"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLocation"
+            android:layout_below="@+id/etEdate"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="10dp"
+            android:hint="Location"
+            android:background="@drawable/custom_input"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDesription"
+            android:layout_below="@+id/etLocation"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="Invite Emails (Comma Separated)"
+            android:background="@drawable/custom_input"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etDesription"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:text="Create Event"
+            android:textSize="15sp"
+            android:fontFamily="@font/copse"
+            app:backgroundTint="@color/btngray"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</RelativeLayout>
